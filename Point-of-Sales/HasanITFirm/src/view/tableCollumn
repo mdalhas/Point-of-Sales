@@ -1,0 +1,81 @@
+CREATE TABLE `hasansit`.`sales` (
+  `sid` INT NOT NULL AUTO_INCREMENT,
+  `productName` VARCHAR(45) NULL,
+  `unitPrice` FLOAT(8,2) NULL,
+  `quantity` FLOAT(8,2) NULL,
+  `totalPrice` FLOAT(10,2) NULL,
+  `discount` FLOAT(8,2) NULL,
+  `actualPrice` FLOAT(9,2) NULL,
+  `cashReceived` FLOAT(8,2) NULL,
+  `dueAmount` FLOAT(8,2) NULL,
+  `saller` VARCHAR(45) NULL,
+  `castomerName` VARCHAR(45) NULL,
+  `Date` DATE NULL,
+  PRIMARY KEY (`sid`));
+
+
+ALTER TABLE `hasansit`.`sales` 
+ADD COLUMN `dueAmount` FLOAT(8,2) NULL AFTER `cashReceived`,
+CHANGE COLUMN `castomerName` `castomerName` VARCHAR(45) NULL DEFAULT NULL AFTER `dueAmount`;
+
+CREATE TABLE `hasandb`.`purchase` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `code` VARCHAR(45) NULL,
+  `unitPrice` FLOAT(8,2) NULL,
+  `quantity` FLOAT(8,2) NULL,
+  `totalPrice` FLOAT(10,2) NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `hasansit`.`stock` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `productName` VARCHAR(45) NULL,
+  `productCode` VARCHAR(45) NULL,
+  `Quantity` FLOAT(5,2) NULL,
+  PRIMARY KEY (`id`));
+
+
+CREATE TABLE `hasansit`.`product` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `code` VARCHAR(45) NULL,
+  `unitPrice` FLOAT NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `hasansit`.`customer` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `mobile` VARCHAR(45) NULL,
+  `address` VARCHAR(70) NULL,
+  `payDate` DATE NULL,
+  `dueAmount` FLOAT(8,2) NULL,
+  `receiveDue` FLOAT(8,2) NULL,
+  `actualDue` FLOAT(8,2) NULL,
+  PRIMARY KEY (`id`));
+
+CREATE TABLE `hasansit`.`stock` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `code` VARCHAR(45) NULL,
+  `quantity` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+
+
+ALTER TABLE `hasansit`.`stock` 
+ADD COLUMN `totalPrice` FLOAT(10,2) NULL AFTER `quantity`,
+CHANGE COLUMN `unitPrice` `unitPrice` FLOAT(8,2) NULL DEFAULT NULL ;
+
+
+
+ALTER TABLE `hasansit`.`customer` 
+ADD COLUMN `sl` INT NULL AFTER `id`,
+CHANGE COLUMN `payDate` `SaleDate` DATE NULL DEFAULT NULL AFTER `address`,
+CHANGE COLUMN `dueAmount` `dueAmount` FLOAT(8,2) NULL DEFAULT 0.0f ,
+CHANGE COLUMN `receiveDue` `receiveDue` FLOAT(8,2) NULL DEFAULT 0.0f ,
+CHANGE COLUMN `actualDue` `actualDue` FLOAT(8,2) NULL DEFAULT 0.0f ;
+
+
+id, name, mobile, address, dueAmount, payDate, receiveDue, actualDue
+

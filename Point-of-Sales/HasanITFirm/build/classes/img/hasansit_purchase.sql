@@ -1,0 +1,56 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: localhost    Database: hasansit
+-- ------------------------------------------------------
+-- Server version	8.0.34
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `purchase`
+--
+
+DROP TABLE IF EXISTS `purchase`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `purchase` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) DEFAULT NULL,
+  `code` varchar(45) DEFAULT NULL,
+  `unitPrice` float(8,2) DEFAULT NULL,
+  `quantity` float(8,2) DEFAULT NULL,
+  `totalPrice` float(10,2) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `purchase`
+--
+
+LOCK TABLES `purchase` WRITE;
+/*!40000 ALTER TABLE `purchase` DISABLE KEYS */;
+INSERT INTO `purchase` VALUES (1,'Mouse','M45Ck',540.00,10.00,5400.00,NULL),(2,'Monitor','Mhhfd15',450.00,620.00,279000.00,NULL),(3,'Mula','Ml45',45.00,20.00,900.00,'2023-09-05'),(4,'Morich','mog345',488.00,45.00,21960.00,'2023-09-05'),(5,'Morich','mog345',488.00,45.00,21960.00,'2023-09-05'),(6,'dfgd','fgf',452.00,453.00,204756.00,'2023-09-02'),(7,'KeyBoard','k-hf',1000.00,50.00,50000.00,'2023-09-07'),(8,'yhjhuuy','yh',45.00,45.00,2025.00,'2023-09-06'),(17,'Item 3','Mos',56.00,56.00,3136.00,'2023-10-05'),(18,'Item 4','Computer',50000.00,20.00,1000000.00,'2023-10-05'),(19,'Monitor','K954',50.00,5.00,250.00,'2023-10-04'),(20,'Firiz','Item 2',45.00,45.00,2025.00,'2023-10-06'),(21,'Firiz','Item 2',4524.00,452.00,2044848.00,'2023-10-06'),(22,'Firiz','Item 2',45.00,44.00,1980.05,'2023-10-07'),(23,'Firiz','Item 1',47.00,45.00,2115.05,'2023-10-13'),(24,'Rintu','R-10',10.00,15.00,150.00,'2023-10-06');
+/*!40000 ALTER TABLE `purchase` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2023-10-05  3:24:27
