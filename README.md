@@ -32,3 +32,17 @@ This is a Point of Sales (POS) system implemented in Java Swing. The project aim
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/mdalhas/point-of-sales.git
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/Dashboard_1.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/add_to_cart_2.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/final_sale_3.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/order_complete_4.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/save_file_5.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/pdf_6.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/add_product_7.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/add_product_8.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/show_report_by_date_9.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/update_due_10.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/due_reset_11.PNG)
+![App Screenshot](https://github.com/mdalhas/Point-of-Sales/blob/main/Point-of-Sales/screenshot_pos/stock_details_12.PNG)
+
+            
